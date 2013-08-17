@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Min's Gallery</title>
+    <link rel="stylesheet" type="text/css" href="lib/blueprint/screen.css" media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="lib/blueprint/print.css" media="print"/>
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" type="text/css" href="lib/blueprint/ie.css" media="screen,projection"/>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/jquery.fancybox-1.2.6.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js">
+    </script>
+    <script type="text/javascript" src="lib/jquery.fancybox-1.2.6.pack.js">
+    </script>
+    <style type="text/css">
+      body, #categorygallery {
+        background-color: #dc9;
+        font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+      }
+
+      #header {
+        margin: 10ex auto 4ex;
+        text-align: center;
+        border-bottom: solid #888;
+      }
+
+      #header h1 {
+        font-weight: bold;
+      }
+
+      #about {
+        text-align: center;
+        font-size: 1.5em;
+      }
+
+      #body {
+        margin: 0 auto;
+      }
+
+      #body h2 {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      #body img {
+        cursor: pointer;
+      }
+
+      div.thumbnail {
+        padding: 4px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+
+      #categorygallery a {
+        display: float;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #footer {
+        margin: 2ex auto auto;
+      }
+
+      #abouttheartistlink {
+        cursor: pointer;
+      }
+    </style>
+    <script type="text/javascript">
+      var selectorTagsMap = {
+        "#landscape": "Landscape",
+        "#stilllife": "Still life",
+        "#people": "Figures and Portraits"
+      };
+      var tagsSelectorMap = {};
+      for (var selector in selectorTagsMap) {
+        tagsSelectorMap[selectorTagsMap[selector]] = selector;
+      }
+
+      function randomElement(aList) {
+        return aList[Math.floor(Math.random() * aList.length)];
+      }
+
+      function createShowCategory(selector) {
+        /* Explicitly create a closure. */
+        return function() {
+          $.ui.dialog.maxZ = 0;  /* hack: avoid dialog's moveToTop */
+          var className = selector.substring(1);
+          $("#categorygallery div").hide();
+          $("#categorygallery div." + className).show();
+          $("#categorygallery")
+            .dialog("option", "title", selectorTagsMap[selector])
+            .dialog("open");
+        };
+      }
+
+      function showAlbums() {
+        $.get("http://picasaweb.google.com/data/feed/api/user/minzhong1/album/WebGallery",
+              {"kind": "photo", "alt": "json"},
+        function(data){
+          selectorItemsMap = {};
+          for (selector in selectorTagsMap) {
+            selectorItemsMap[selector] = [];
+          }
+
+          /* Add each picture to the gallery dialog, with enough info to show and hide. */
+          $.each(data.feed.entry, function(i, entry) {
+            var href = entry.content.src;
+            var title = entry.summary.$t;
+            /* thumbnails[0-2].{url,width,height} */
+            var thumbnails = entry.media$group.media$thumbnail;
+            /* Keywords list looks like "one, one two" for keywords ["one","one two"]. */
+            var tags = entry.media$group.media$keywords.$t;
+
+            /* Ignore tags we don't understand.  TODO: Handle keyword lists. */
+            var selector = tagsSelectorMap[tags];
+            if (!selector) {
+              return true;
+            }
+
+            /* Add to our list of items for the Fancybox. */
+            selectorItemsMap[selector].push({
+              href: href,
+              title: title,
+              /* TODO: Add suitable orig if we want to animate. */
+
+              /* Below attributes are not used by Fancybox. */
+              largeThumbnail: thumbnails[2] 
+            });
+
+            var className = selector.substring(1);
+            var dialogThumbnail = thumbnails[1];  
+            /* Construct the div.thumbnail.{landscape,...} inside the dialog. */
+            var categoryGalleryDiv =
+            $("<div class='thumbnail'/>")
+              .addClass(className)
+              .append($("<a/>").attr({
+              href: href,
+              title: title,
+              rel: className,
+              style: "width: " + dialogThumbnail.width + "px; height: " + dialogThumbnail.height + "px"
+            }).append($("<img/>").attr({
+              src: dialogThumbnail.url,
+              width: dialogThumbnail.width,
+              height: dialogThumbnail.height,
+              title: title,
+              alt: ""
+            }))).appendTo("#categorygallery");
+          });
+
+          /* Create the dialog. */
+          $("#categorygallery").dialog({
+            autoOpen: false,
+            modal: true,
+            height: 600,
+            width: 480,
+            zIndex: 10 /* Hide behind Fancybox */
+          });
+
+          /* Create the main page thumbnails that open the dialog. */
+          for (var selector in selectorTagsMap) {
+            var item = randomElement(selectorItemsMap[selector]);
+            $("<div/>").append($("<img/>").attr({
+              src: item.largeThumbnail.url,
+              width: item.largeThumbnail.width,
+              height: item.largeThumbnail.height,
+              title: item.title,
+              alt: ""
+            }).click(createShowCategory(selector))).appendTo(selector + "-thumbnail");
+
+            /* While we're here, also set up Fancybox for our item list. */
+            $("div.thumbnail." + selector.substring(1) + " a").fancybox({
+              overlayOpacity: 0.7,
+              overlayColor: "#000",
+              itemArray: selectorItemsMap[selector]
+            });
+          }
+        }, "jsonp");
+      };
+
+      $(document).ready(function(){
+        showAlbums();
+
+        $("#abouttheartist").dialog({
+          autoOpen: false,
+          modal: true,
+          height: 600,
+          width: 480
+        });
+        $("#abouttheartistlink").click(function(){
+          $("#abouttheartist").dialog("open");
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header" class="span-24">
+        <h1>Min Zhong</h1>
+      </div>
+
+      <div id="about" class="span-24">
+        <p><a id="abouttheartistlink">About the artist</a>
+        | <a href="http://blog.minzhongart.com/">Blog</a></p>
+      </div>
+
+      <div id="body" class="span-24">
+        <div id="landscape-thumbnail" class="span-6 append-3">
+          <h2>Landscape</h2>
+        </div>
+        <div id="stilllife-thumbnail" class="span-6 append-3">
+          <h2>Still Life</h2>
+        </div>
+        <div id="people-thumbnail" class="span-6 last">
+          <h2>People</h2>
+        </div>
+      </div>
+
+      <div id="footer" class="span-24">
+        <p><a href="mailto:minzhong1@yahoo.com">Contact the artist</a> to discuss commissions.</p>
+        <p>All images copyright Min Zhong.</p>
+      </div>
+    </div>
+    <div id="categorygallery" class="hide">
+      <p>Click on any image to see it larger.</p>
+    </div>
+    <div id="abouttheartist" class="hide" title="About the Artist">
+      <p>
+        <img class="right" src="lib/Min_Zhong.jpg" width="112"
+        height="169" alt="" />I have always been passionate about
+        drawing since I was a small child. After high school I took a
+        break from the doodling hobby to focus on my engineering
+        studies. I graduated with degrees in Electrical Engineering
+        and Computer Science and have been working as a software
+        engineer for Microsoft since 2001 and then Google since
+        2006. Soon after settling down in the Pacific Northwest, I
+        explored various forms of artistic expression and rediscovered
+        art as my true calling. My medium of choice is oil. I began
+        this endeavor by taking my first oil painting class at the
+        Kirkland Art Center in the fall of 2002, and have gone on to
+        take several workshops and classes from teachers such as
+        <a href="http://jennifermcchristian.com/">Jennifer
+        McChristian</a>, <a href="http://www.tonyryder.com/">Tony
+        Ryder</a>, <a href="http://www.gageacademy.org/artists/?i_id=8&page=instructors">Matt
+        Buchner</a>, <a href="http://www.michellerushworth.com/">Michele
+        Rushworth</a>, and <a href="http://www.nedmueller.com/">Ned
+        Mueller</a>. I am also a regular attendee of a figure drawing
+        session led by Lyle Silver in Seattle. I am inspired by a
+        range of historical and modern masters such as Rembrandt,
+        Corot, Winslow Homer, Tony Ryder, Ted Geoschner, and Thomas
+        Buechner. My artist friends Louise Britton, Lyle Silver, and
+        many others are constant inspiration and help me grow
+        throughout the years.
+      </p>
+      <p>
+        I explore a variety of genres: landscape, figure, portrait,
+        and still life, often weather/season influenced.  With all
+        these subjects, I look for both a visual appeal and a theme. I
+        strive to create compositions that tell stories and evoke
+        emotions with shapes and values. I am interested in the
+        correct modeling of the forms and observation of interplay
+        between form and light, and exploring how to say more with
+        less, favoring simplicity over complexity. I work from life
+        mainly, as I find it beneficial for my learning of the
+        lighting and the modeling of forms this way.
+      </p>
+      <p>
+        Art helps me see the world with gratitude, and the process of
+        conveying my views has been spiritually meditative to me. I
+        also find that artistic creativity and logical reasoning are
+        complimentary, as the ingenuity, rigor, and logical decisions
+        essential to both a good painting and a successful engineering
+        project are quite similar. Each painting is a problem-solving
+        process as much as an artistic expression, and I enjoy the
+        growth from having worked through the process and challenges
+        each time.
+      </p>
+      <p>
+        Member of
+        the <a href="http://www.parklanegallery.com/">Parklane
+        Gallery</a> since 2009.
+      </p>
+      <p>
+	Exhibited in the Juried Show at the 2007, 2009, and
+	2010 <a href="http://www.edmondsartsfestival.com/">Edmonds
+	Arts Festival</a>.<br/>  Exhibited in the Juried Show at the 2010
+	<a href="http://www.liveartsbothell.org/">Live ARTS Bothell
+	Art Festival</a>.<br/> Exhibited in the Juried Show at
+	Enumclaw's BaseCamp art fair 2007.
+      </p>
+    </div>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-11167893-1");
+        pageTracker._trackPageview();
+      } 
+      catch (err) {
+      }
+    </script>
+  </body>
+</html>
