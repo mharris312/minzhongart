@@ -13,9 +13,13 @@ html, body {
 }
 
 /* Shift sections down to account for navbar */
-
 .carousel, #portfolio, #about {
   padding-top: 90px;
+}
+
+/* Make up for the tall navbar */
+.carousel {
+  margin-bottom: -50px;
 }
 
 .carousel .carousel-item>img {
