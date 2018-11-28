@@ -1,0 +1,64 @@
+html, body {
+  background-color: #eee;
+  color: #555;
+}
+
+#mynavbar {
+  box-shadow: 0px 0px 10px #bbb;
+  min-height: 75px;
+}
+
+.navbar-brand {
+  margin-right: 4em;
+}
+
+/* Shift sections down to account for navbar */
+
+.carousel, #portfolio, #about {
+  padding-top: 90px;
+}
+
+.carousel .carousel-item>img {
+  height: 60vh;
+  margin: 0 auto;
+  display: block;
+  line-height: 1;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-caption {
+  position: initial;
+  color: #555;
+  padding-bottom: 0;
+}
+
+.img-thumbnail:hover {
+  border: 1px solid #069;
+  cursor: pointer;
+}
+
+/* Applied to a div with a background-image, make the div the same height as its full width. */
+
+.img-thumbnail>img {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  /* % of width, defines aspect ratio */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Set the fixed height of the footer here */
+
+footer {
+  height: 60px;
+}

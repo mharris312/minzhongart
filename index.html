@@ -1,299 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Min Zhong Art</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="author" content="Min Zhong" href="https://plus.google.com/104987678724051308649/posts"/>
-    <link rel="description" content="A fine arts oil painter living in the Pacific Northwest."/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-    <style>
-      /* Bring the body below the navbar. */
-      body { padding-top: 50px; }
-      .featurette-divider {
-        margin: 80px 0;
-      }
-      
-      /* Apply a background from subtlepatterns.com. */
-      body {
-        background-image: url(https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/texturetastic_gray.png);
-      }
-      
-      /* Center the carousel images. */
-      .carousel .item > img {
-        height: 480px;
-        
-        margin: 0 auto;
-        display: block;
-        line-height: 1;
-      }
-      
-      /* Applied to a div with a background-image, make the div the same height as its full width. */
-      .square {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-bottom: 100%; /* % of width, defines aspect ratio */
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-      }
-      
-      html,
-      body {
-        height: 100%;
-        /* The html and body elements cannot have any padding or margin. */
-      }
-      
-      /* Wrapper for page content to push down footer */
-      #wrap {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        /* Negative indent footer by its height */
-        margin: 0 auto -60px;
-        /* Pad bottom by footer height */
-        padding: 0 0 60px;
-      }
-      
-      /* Set the fixed height of the footer here */
-      footer {
-        height: 60px;
-        background-color: #f5f5f5;
-      }
-      .container .credit {
-        margin: 20px 0;
-      }
-      
-      /* Lastly, apply responsive CSS fixes as necessary */
-      @media (max-width: 767px) {
-      #footer {
-        margin-left: -20px;
-        margin-right: -20px;
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-    }
-    </style>
-    <script>
-      /* Google Analytics tracking code. */
-      var _gaq = _gaq || [];
-      var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-      _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-      _gaq.push(['_setAccount', 'UA-11167893-1']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-  </head>
-  <body data-spy="scroll" data-target="#navbar" data-offset="60">
-    <div id="wrap">
-      <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Min Zhong Art</a>
+
+<head>
+  <title>Min Zhong Art</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="author" content="Min Zhong" href="https://plus.google.com/104987678724051308649/posts" />
+  <link rel="description" content="A fine arts oil painter living in the Pacific Northwest." />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./index.css" />
+  <script>
+    /* Google Analytics tracking code. */
+    var _gaq = _gaq || [];
+    var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+    _gaq.push(['_setAccount', 'UA-11167893-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+
+<body data-spy="scroll" data-target="#mynavbar" data-offset="60">
+  <div id="wrap">
+    <nav id="mynavbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#carousel">Min Zhong Art</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#carousel">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+          <a class="nav-item nav-link" href="#about">About</a>
+          <a class="nav-item nav-link" href="http://blog.minzhongart.com/">Blog</a>
         </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#mycarousel">Home</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="http://blog.minzhongart.com/">Blog</a></li>
-        </ul>
-      </nav>
-      
-      <div id="mycarousel" class="carousel slide" autofocus="autofocus">
+      </div>
+    </nav>
+
+    <div class="container">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
         </div>
-        <a class="left carousel-control" href="#mycarousel" data-slide="prev"><span class="icon-prev"></span></a>
-        <a class="right carousel-control" href="#mycarousel" data-slide="next"><span class="icon-next"></span></a>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      
-      <div class="container">
-        <h2 id="portfolio">Portfolio</h2>
-        <div id="portfolio-contents" class="row"></div>
-        
-        <h2 id="about">About the Artist</h2>
-        <div class="row">
-          <div class="col-lg-5 col-md-6">
-            <p>
-              I have always been passionate about drawing since I was
-              a small child. After high school I took a break from the
-              doodling hobby to focus on my engineering studies. I
-              graduated with degrees in Electrical Engineering and
-              Computer Science and have been working as a software
-              engineer for Microsoft since 2001 and then Google since
-              2006. Soon after settling down in the Pacific Northwest,
-              I explored various forms of artistic expression and
-              rediscovered art as my true calling. My medium of choice
-              is oil. I began this endeavor by taking my first oil
-              painting class at the Kirkland Art Center in the fall of
-              2002, and have gone on to take several workshops and
-              classes from teachers such as
-              <a href="http://jennifermcchristian.com/">Jennifer
-                McChristian</a>, <a href="http://www.tonyryder.com/">Tony
+
+      <div id="portfolio" class="d-flex mb-3">
+        <h4>Portfolio</h4>
+
+        <ul id="portfolio-filter" class="nav ml-3">
+          <div class="btn text-primary" group="">All</div>
+          <div class="btn" group="people">People</div>
+          <div class="btn" group="landscape">Landscape</div>
+          <div class="btn" group="stilllife">Still Life</div>
+          <div class="btn" group="miniature">Miniature</div>
+        </ul>
+      </div>
+      <div id="portfolio-contents" class="row justify-content-center"></div>
+
+      <h4 id="about">About the Artist</h4>
+      <div class="row">
+        <div class="col-lg-5 col-md-6">
+          <p>
+            I have always been passionate about drawing since I was
+            a small child. After high school I took a break from the
+            doodling hobby to focus on my engineering studies. I
+            graduated with degrees in Electrical Engineering and
+            Computer Science and have been working as a software
+            engineer for Microsoft since 2001 and then Google since
+            2006. Soon after settling down in the Pacific Northwest,
+            I explored various forms of artistic expression and
+            rediscovered art as my true calling. My medium of choice
+            is oil. I began this endeavor by taking my first oil
+            painting class at the Kirkland Art Center in the fall of
+            2002, and have gone on to take several workshops and
+            classes from teachers such as
+            <a href="http://jennifermcchristian.com/">Jennifer
+              McChristian</a>, <a href="http://www.tonyryder.com/">Tony
               Ryder</a>, <a href="http://www.gageacademy.org/artists/?i_id=8&page=instructors">Matt
               Buchner</a>, <a href="http://www.michellerushworth.com/">Michele
               Rushworth</a>, and <a href="http://www.nedmueller.com/">Ned
               Mueller</a>. I am also a regular attendee of a figure drawing
-              session led by Lyle Silver in Seattle. I am inspired by a
-              range of historical and modern masters such as Rembrandt,
-              Corot, Winslow Homer, Tony Ryder, Ted Geoschner, and Thomas
-              Buechner. My artist friends Louise Britton, Lyle Silver, and
-              many others are constant inspiration and help me grow
-              throughout the years.
-            </p>
-            <p>
-              I explore a variety of genres: landscape, figure,
-              portrait, and still life, often weather/season
-              influenced.  With all these subjects, I look for both a
-              visual appeal and a theme. I strive to create
-              compositions that tell stories and evoke emotions with
-              shapes and values. I am interested in the correct
-              modeling of the forms and observation of interplay
-              between form and light, and exploring how to say more
-              with less, favoring simplicity over complexity. I work
-              from life mainly, as I find it beneficial for my
-              learning of the lighting and the modeling of forms this
-              way.
-            </p>
-            <p>
-              Art helps me see the world with gratitude, and the
-              process of conveying my views has been spiritually
-              meditative to me. I also find that artistic creativity
-              and logical reasoning are complimentary, as the
-              ingenuity, rigor, and logical decisions essential to
-              both a good painting and a successful engineering
-              project are quite similar. Each painting is a
-              problem-solving process as much as an artistic
-              expression, and I enjoy the growth from having worked
-              through the process and challenges each time.
-            </p>
-          </div>
-          <div class="col-lg-offset-2 col-lg-4 col-md-offset-2 col-md-4">
-            <ul>
-              <li>Member of
-                the <a href="http://www.parklanegallery.com/">Parklane
+            session led by Lyle Silver in Seattle. I am inspired by a
+            range of historical and modern masters such as Rembrandt,
+            Corot, Winslow Homer, Tony Ryder, Ted Geoschner, and Thomas
+            Buechner. My artist friends Louise Britton, Lyle Silver, and
+            many others are constant inspiration and help me grow
+            throughout the years.
+          </p>
+          <p>
+            I explore a variety of genres: landscape, figure,
+            portrait, and still life, often weather/season
+            influenced. With all these subjects, I look for both a
+            visual appeal and a theme. I strive to create
+            compositions that tell stories and evoke emotions with
+            shapes and values. I am interested in the correct
+            modeling of the forms and observation of interplay
+            between form and light, and exploring how to say more
+            with less, favoring simplicity over complexity. I work
+            from life mainly, as I find it beneficial for my
+            learning of the lighting and the modeling of forms this
+            way.
+          </p>
+          <p>
+            Art helps me see the world with gratitude, and the
+            process of conveying my views has been spiritually
+            meditative to me. I also find that artistic creativity
+            and logical reasoning are complimentary, as the
+            ingenuity, rigor, and logical decisions essential to
+            both a good painting and a successful engineering
+            project are quite similar. Each painting is a
+            problem-solving process as much as an artistic
+            expression, and I enjoy the growth from having worked
+            through the process and challenges each time.
+          </p>
+        </div>
+        <div class="col-lg-offset-2 col-lg-4 col-md-offset-2 col-md-4">
+          <ul>
+            <li>Member of
+              the <a href="http://www.parklanegallery.com/">Parklane
                 Gallery</a> 2009&ndash;2010.</li>
-              <li>Exhibited in the Juried Show at the 2007, 2009, and
-                2010 <a href="http://www.edmondsartsfestival.com/">Edmonds
+            <li>Exhibited in the Juried Show at the 2007, 2009, and
+              2010 <a href="http://www.edmondsartsfestival.com/">Edmonds
                 Arts Festival</a>.</li>
-              <li>Exhibited in the Juried Show at the 2010
-                <a href="http://www.liveartsbothell.org/">Live ARTS Bothell
-                  Art Festival</a>.</li>
-              <li>Exhibited in the Juried Show at Enumclaw's BaseCamp art fair 2007.</li>
-            </ul>
-          </div>
+            <li>Exhibited in the Juried Show at the 2010
+              <a href="http://www.liveartsbothell.org/">Live ARTS Bothell
+                Art Festival</a>.</li>
+            <li>Exhibited in the Juried Show at Enumclaw's BaseCamp art fair 2007.</li>
+          </ul>
         </div>
       </div>
     </div>
-    
-    <footer>
-      <div class="container">
-        <p class="text-muted credit">All images are copyright Min Zhong.</p>
-      </div>
-    </footer>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script>
-      var p = [
-        {"y":2013,"t":"Under the Palm Trees","w":14,"h":11,"u":"https://lh3.ggpht.com/-D0GZwylaFqU/UpGbS8YTZYI/AAAAAAAASVI/kEDPEpl_qAs/s320/20131122_PalmTreeAndOcean_final.jpg","g":["landscape"]},
-        {"y":2013,"t":"Timeless","m":"Oil on canvas","w":18,"h":24,"u":"https://lh3.ggpht.com/-liOVxuaVVDg/UkeHSG48jHI/AAAAAAAARPI/mnEOQIy4eA4/s320/DSC_9460.jpg","g":["people"]},
-        {"y":2012,"t":"Poplars' Notes","m":"Oil on canvas","w":16,"h":20,"u":"https://4.bp.blogspot.com/-pPo408_LG2M/UOKLcIwF0TI/AAAAAAAAKvU/dUtGfqXEOFs/s320/20121229_Poplars.jpg","g":["landscape"]},
-        {"y":2012,"t":"A Summer Eve","m":"Oil on canvas","w":16,"h":20,"u":"https://1.bp.blogspot.com/-aFpive-Vz0k/UD_M5SEfzvI/AAAAAAAAJp0/h7HG_R7kI-8/s320/20120826_06MadridClouds.jpeg","g":["landscape"]},
-        {"y":2011,"t":"Sunset over the Mountains","m":"Oil","w":20,"h":16,"u":"https://1.bp.blogspot.com/-zwk-X9RkidU/Tvgv1FUso8I/AAAAAAAAFoE/lO8JdiwG1S4/s320/201112_03SunsetField.JPG","g":["landscape"]},
-        {"y":2011,"t":"Fields by Snake River","m":"Oil","w":24,"h":18,"u":"https://4.bp.blogspot.com/_hHE21tS1Nog/TUZI0Jfj6CI/AAAAAAAADWA/rOCP90Xrw0Q/s320/201101_IdahoField_5.JPG","g":["landscape"]},
-        {"y":2009,"t":"Winter Sunset","m":"Oil","w":14,"h":11,"u":"https://3.bp.blogspot.com/_hHE21tS1Nog/Sy2B8SUGbQI/AAAAAAAACsY/0RfgeWCL9Q4/s320/200911WinterSunset.jpg","g":["landscape"]},
-        {"y":2010,"t":"Winter Sunset II","m":"Oil","w":24,"h":18,"u":"https://3.bp.blogspot.com/_hHE21tS1Nog/S6WiwntREyI/AAAAAAAAC64/5OVRdCWF2cg/s320/201002WinterSunSet2.jpg","g":["landscape"]},
-        {"y":2006,"t":"Snow Day","m":"Oil","w":8,"h":10,"u":"https://2.bp.blogspot.com/_hHE21tS1Nog/Sy2B8EU67YI/AAAAAAAACsQ/_cpw07lQUcY/s320/200612SnowDay.jpg","g":["landscape"]},
-        {"y":2009,"t":"Red","m":"Oil","w":8,"h":10,"u":"https://3.bp.blogspot.com/_hHE21tS1Nog/Sy11Cxy8u4I/AAAAAAAACrw/lxnK6EqdOoc/s320/200910Red.jpg","g":["landscape"]},
-        {"y":2009,"t":"Clouds over Forbes Lake","m":"Oil","w":10,"h":8,"u":"https://1.bp.blogspot.com/_hHE21tS1Nog/Sy11CtsHueI/AAAAAAAACro/g09_wEaKXX0/s320/200910CloudsOverForbesLake.jpg","g":["landscape"]},
-        {"y":2007,"t":"Conversation at Juanita Beach","m":"Oil","w":14,"h":11,"u":"https://2.bp.blogspot.com/_hHE21tS1Nog/Sy11CIJCXGI/AAAAAAAACrg/nyzH4kd9hsQ/s320/200708ConversationAtJuanitaBeach.jpg","g":["landscape"]},
-        {"y":2006,"t":"Sunset over Kirkland Marina","m":"Oil","w":14,"h":11,"u":"https://3.bp.blogspot.com/_hHE21tS1Nog/Sy11B6EY0TI/AAAAAAAACrY/sqeGl-kUfRk/s320/20060912Sunset+Over+Kirkland+Marina.jpg","g":["landscape"]},
-        {"y":2010,"t":"Crashing Waves","m":"Oil on canvas","w":20,"h":16,"u":"https://2.bp.blogspot.com/_hHE21tS1Nog/TDS-RHFLdAI/AAAAAAAADKg/_qi4RPpxgIs/s320/201006BigSurWave.JPG","g":["landscape"]},
-        {"y":2010,"t":"On the Farm","m":"Oil","w":14,"h":11,"u":"https://1.bp.blogspot.com/_hHE21tS1Nog/TGcqv2nQCuI/AAAAAAAADSY/WDqkHmCglNk/s320/201007SunsetOnFarm_small.JPG","g":["landscape"]},
-        {"y":2010,"t":"Summer Garden","m":"Oil on canvas","w":11,"h":14,"u":"https://4.bp.blogspot.com/_hHE21tS1Nog/TGcqvuCYF4I/AAAAAAAADSQ/8qFzjR1_7hw/s320/201007SummerGarden_small.JPG","g":["landscape"]},
-        {"y":2009,"t":"Chasing Tide","m":"Oil on canvas","w":10,"h":8,"u":"https://2.bp.blogspot.com/_hHE21tS1Nog/SqZz1tvfy2I/AAAAAAAACeA/cZt9uzEbEqg/s320/20090904_ChasingTides_01.JPG","g":["stilllife"]},
-        {"y":2009,"t":"Chasing Tide II","m":"Oil on canvas","w":10,"h":8,"u":"https://3.bp.blogspot.com/_hHE21tS1Nog/Ssk6AmlRnTI/AAAAAAAACfY/jIwdIPUwK7o/s320/20090929_ChasingTide2_Unframed.JPG","g":["stilllife"]},
-        {"y":2009,"t":"The Trio","m":"Oil","w":11,"h":14,"u":"https://1.bp.blogspot.com/_hHE21tS1Nog/Sy2B7vDXx4I/AAAAAAAACsI/SZTLAqUsoYk/s320/200911TheTrio.jpg","g":["stilllife"]},
-        {"y":2009,"t":"Sugar, Please","m":"Oil","w":12,"h":9,"u":"https://2.bp.blogspot.com/_hHE21tS1Nog/SvkCqUvBmcI/AAAAAAAAChc/KNSsmEsmrIE/s320/Min+Zhong+-+Sugar+Please.jpg","g":["stilllife"]},
-        {"y":2012,"t":"Iris","m":"Oil on panel","w":14,"h":11,"u":"https://1.bp.blogspot.com/-1QTHLUnOye0/T2GAMlnfACI/AAAAAAAAGhM/x_mgRmdub_s/s320/20120310_Iris.jpg","g":["people"]},
-        {"y":2011,"t":"Wishing for Snow","m":"Oil","w":8,"h":10,"u":"https://1.bp.blogspot.com/-lVnoptqnSIg/Tecbr82wPNI/AAAAAAAADbM/CqsFioLkgOE/s320/201101_Hui_0.JPG","g":["people"]},
-        {"y":2010,"t":"In My Garden","m":"Oil","w":8,"h":10,"u":"https://4.bp.blogspot.com/_hHE21tS1Nog/TUZI0SZO1RI/AAAAAAAADWI/lRipLTzygos/s320/201012_Gladys_6.JPG","g":["people"]},
-        {"y":2010,"t":"The Curious Twos","m":"Oil","w":8,"h":10,"u":"https://3.bp.blogspot.com/_hHE21tS1Nog/S3zklTjr79I/AAAAAAAAC50/ymseQCCAMoU/s320/201001_TheCuriousTwos.jpg","g":["people"]},
-        {"y":2013,"t":"Clouds over Lake","m":"Oil on canvas","w":5,"h":5,"u":"https://3.bp.blogspot.com/-eA0tzIlOm9Q/UXIq5D-oofI/AAAAAAAALG4/iaeRMamrisc/s320/201303_CoolCloudsWholeSky5x5.JPG","g":["miniature"]},
-        {"y":2013,"t":"Clouds over Mountain","m":"Oil on canvas","w":5,"h":5,"u":"https://4.bp.blogspot.com/-DGxf37g4bMA/UXIq_NzVPAI/AAAAAAAALHA/XIvGwyGKlU8/s320/201302_CloudsOverMtn5x5.JPG","g":["miniature"]},
-        {"y":2013,"t":"Bird","m":"Oil on canvas","w":5,"h":5,"u":"https://2.bp.blogspot.com/-qKYi2-IvAbs/UXIrEMnzOTI/AAAAAAAALHI/ZBq6iA4Rasc/s320/20130417WhiteBirdInBlue5x5Edmonds.JPG","g":["miniature"]},
-        {"y":2013,"t":"Lanai Sailing","m":"Oil on canvas","w":6,"h":4,"u":"https://3.bp.blogspot.com/-qM14Rsc1A7I/UXIrIJdoIzI/AAAAAAAALHQ/ludUYNeWUdc/s320/20130417LanaiSail_6x4Edmonds.JPG","g":["miniature"]},
-        {"y":2011,"t":"Clouds over the Prarie","m":"Oil","w":7,"h":5,"u":"https://2.bp.blogspot.com/-y6SS6lyX_v8/TvgwkaVVXjI/AAAAAAAAFoY/ROO1feQlbj0/s320/201112_FieldClouds.JPG","g":["miniature"]},
-        {"y":2010,"t":"Ocean Melody I","m":"Oil","w":7,"h":5,"u":"https://2.bp.blogspot.com/_hHE21tS1Nog/S3zkk7EkmNI/AAAAAAAAC5s/xpbqui5ubTc/s320/201001_OceanMelodyI.jpg","g":["miniature"]},
-        {"y":2010,"t":"Ocean Melody II","m":"Oil","w":7,"h":5,"u":"https://1.bp.blogspot.com/_hHE21tS1Nog/S3zkkaAxd8I/AAAAAAAAC5k/Mm-zGeHntLI/s320/201001_OceanMelodyII.jpg","g":["miniature"]},
-        {"y":2010,"t":"Red Peppers","m":"Oil","w":7,"h":5,"u":"https://3.bp.blogspot.com/_hHE21tS1Nog/S7l_6uBZT6I/AAAAAAAAC-Y/-DkAP80lWD4/s320/201003RedPeppers_0.JPG","g":["miniature"]},
-        {"y":2009,"t":"Cherry Hearts","m":"Oil","w":5,"h":7,"u":"https://4.bp.blogspot.com/_hHE21tS1Nog/SvkDC8BBAGI/AAAAAAAACh8/HQx993BKoPg/s320/Min+Zhong+-+Cherry+Hearts.jpg","g":["miniature"]},
-        {"y":2009,"t":"Ruby Red","m":"Oil","w":7,"h":5,"u":"https://1.bp.blogspot.com/_hHE21tS1Nog/SvkDCoCLN9I/AAAAAAAACh0/xebmULkfmYQ/s320/Min+Zhong+-+Ruby+Red.jpg","g":["miniature"]},
-        {"y":2009,"t":"Spoonful","m":"Oil","w":7,"h":5,"u":"https://2.bp.blogspot.com/_hHE21tS1Nog/SvkCq5TH3TI/AAAAAAAAChs/1bLHdmJTBGI/s320/Min+Zhong+-+Spoonful.jpg","g":["miniature"]},
-        {"y":2009,"t":"Sunday Afternoon Siesta","m":"Oil","w":5,"h":7,"u":"https://4.bp.blogspot.com/_hHE21tS1Nog/SvkCqjRO8DI/AAAAAAAAChk/9I2fuwyK0Yk/s320/Min+Zhong+-+Sunday+Afternoon+Siesta.jpg","g":["miniature"]},
-        {"y":2009,"t":"Three Stooges","m":"Oil","w":8,"h":6,"u":"https://3.bp.blogspot.com/_hHE21tS1Nog/St1Pp4w42oI/AAAAAAAACgM/7-EBWBKLEnA/s320/20091018_3Stuges_00.JPG","g":["miniature"]},
-        {"y":2010,"t":"Silver Lining","m":"Oil","w":7,"h":5,"u":"https://2.bp.blogspot.com/_hHE21tS1Nog/TGcvQd8_o0I/AAAAAAAADS4/YD4wA0aYMlk/s320/201006SilverLining_small.jpg","g":["miniature"]},
-        {"y":2010,"t":"Silver Lining II","m":"Oil","w":7,"h":5,"u":"https://1.bp.blogspot.com/_hHE21tS1Nog/TGcuL5xwr_I/AAAAAAAADSo/cmWgPcMMLjU/s320/Silverlining2_small.jpg","g":["miniature"]}
-      ];
-      
-      var setImage = function(i) {
-        $("#mycarousel").carousel(i);
-        $("html, body").animate({
-          scrollTop: $("#mycarousel").offset().top
-        }, 200);
-      };
-      
-      /* Install the portfolio. */
-      $(function(p) {
-        $.each(p, function(i,it) {
-          var yearStr = (it.y ? " (" + it.y + ")" : "");
-          var line2 = (it.m ? it.m + ", " : "") + it.w + "″×" + it.h + "″";
-          
-          /* Add the thumbnail. */
-          var tooltipHtml = "<big><i>" + it.t + "</i>" + yearStr + "</big><br/>" + line2;
-          $("<div/>")
-          .addClass("col-lg-2").addClass("col-md-3").addClass("col-sm-6")
-          .append($("<a/>").addClass("thumbnail").attr({"href":"javascript:;","title":tooltipHtml,"onclick":"setImage("+i+")"})
-                  .append($("<div/>").addClass("square").attr({"style":"background-image:url('" + it.u + "')"})))
-          .hide().delay(50*i).fadeIn().appendTo($("#portfolio-contents"));
+  </div>
 
-          /* Add the full-size image to the carousel. */
-          var largeUrl = it.u.replace(/s320/, "s800");
-          $("#mycarousel>.carousel-inner")
-          .append($("<div/>")
-                  .addClass("item")
-                  .append($("<img/>").attr({"src":largeUrl, "alt":""}))
-                  .append($("<div/>").addClass("carousel-caption")
-                          .append($("<h3/>")
-                                  .append($("<i/>").text(it.t))
-                                  .append(document.createTextNode(yearStr)))
-                          .append($("<p/>").text(line2))));
-        });
-        /* Activate the first item. */
-        $("#mycarousel .item:first").addClass("active");
-      }(p));
-      
-      /* Activate tooltips on the thumbnails. */
-      $('.thumbnail').tooltip({"html":true,"placement":"auto"});
+  <footer>
+    <div class="container text-muted credit border-top pt-3 mt-2 text-muted">
+      <p>All images are copyright Min Zhong.</p>
+    </div>
+  </footer>
 
-      /* Enable keyboard shortcuts for the carousel. */
-      $(document).keydown(function(e) {
-        switch (e.which) {
-          case 37:
-            $("#mycarousel").carousel("prev");
-            break;
-          case 39:
-            $("#mycarousel").carousel("next");
-            break;
-          default:
-            return;
-        }
-        e.preventDefault();
-      });
-    </script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/jquery.touchSwipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
