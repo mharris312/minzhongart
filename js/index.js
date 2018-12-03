@@ -15,6 +15,8 @@ var p = [
 
   { y: 2018, t: 'Sunflower', w: 8, h: 8, m: 'Oil on canvas', u: 'https://2.bp.blogspot.com/-bFq2k2mMMEU/Wx14tqJtJrI/AAAAAAAB8ew/8yyW_E4Igps7BlBWrUF5Qak9RUqIUNjTwCKgBGAs/s1600/IMG_20180610_121205301.jpg', g: ['stilllife'], p: '$250' },
 
+
+  { y: 2018, t: 'Jenny', w: 18, h: 24, m: 'Graphite on paper', u: 'https://3.bp.blogspot.com/-Ji2V5rpkjmw/XATPaGU3d1I/AAAAAAACF7M/Nr0bxN7YBIY5_6g2NKMFftLxDKENbDEdwCKgBGAs/s1600/IMG_20181202_121216474.jpg', g: ['people'], p: '$200' },
   { y: 2018, t: 'Jamie', w: 16, h: 20, m: 'Oil on canvas', u: 'https://3.bp.blogspot.com/-0qyj1DfuDxo/WxTSKFns9lI/AAAAAAAB74k/Z2dgCkySErMuSXJO2Lla3OTx7B3lu0bIQCKgBGAs/s1600/IMG_20180530_084642376.jpg', g: ['people'], p: '$800' },
 
 
@@ -143,6 +145,8 @@ function addImages(p, group) {
   });
   /* Activate the first item. */
   $('#carousel .carousel-item:first').addClass('active');
+  /* Activate tooltips on the thumbnails. */
+  $('.img-thumbnail').tooltip({ 'html': true, 'placement': 'auto' });
 };
 
 addImages(p);
@@ -154,6 +158,10 @@ $('#portfolio-filter .btn').on('click', function () {
 
   const group = $(this).attr('group') || '';
   addImages(p, group);
+
+  $('html, body').animate({
+    scrollTop: $('#portfolio').offset().top
+  }, 300);
 });
 
 /* Support swipe on carousel */
@@ -164,9 +172,6 @@ $('#carousel').swipe({
   },
   allowPageScroll: 'vertical'
 });
-
-/* Activate tooltips on the thumbnails. */
-$('.img-thumbnail').tooltip({ 'html': true, 'placement': 'auto' });
 
 /* Enable keyboard shortcuts for the carousel. */
 $(document).keydown(function (e) {
