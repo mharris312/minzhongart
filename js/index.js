@@ -1,4 +1,13 @@
 var p = [
+  { y: 2019, t: 'Evening light through the branches', w: 9, h: 12, m: 'Oil on canvas', u: 'https://1.bp.blogspot.com/-8CQNcMUto1w/XcpV8y9e-MI/AAAAAAACdKw/cbBNfyfZ2hAiTCQQxqK3JdI0PRX4XBLEQCKgBGAsYHg/s1600/IMG_20190906_233609.jpg', g: ['people'], p: '$450' },
+  { y: 2019, t: 'White Dress', w: 12, h: 16, m: 'Oil on canvas', u: 'https://1.bp.blogspot.com/-sFF1f2Ogd08/XWTLktGLjSI/AAAAAAACYk0/yFLeLeHHguUlRQbLDvNXaovyfdNtldihgCKgBGAs/s1600/IMG_20190826_230022.jpg', g: ['people'], p: '$450' },
+  { y: 2019, t: 'Blue Dress', w: 12, h: 16, m: 'Oil on canvas', u: 'https://1.bp.blogspot.com/-nPzOI3irGM8/XWTIc4kBQdI/AAAAAAACYkg/z4H0OrFvcP08n5TUJn83094OpepdIsRgACKgBGAs/s1600/IMG_20190825_171721.jpg', g: ['people'], p: '$450' },
+  { y: 2019, t: 'Amneris', w: 12, h: 16, m: 'Oil on canvas', u: 'https://1.bp.blogspot.com/-c5uIdYMGuvQ/XVeNSa8_Y8I/AAAAAAACYAg/QdXS_hNEZxIkx28p7ve7V76wo3U5dd6EQCKgBGAs/s1600/IMG_20190815_233354.jpg', g: ['landscape'], p: '$550' },
+  { y: 2019, t: 'Evening Glow', w: 12, h: 9, m: 'Oil on canvas', u: 'https://1.bp.blogspot.com/-fJOc9vvho_o/XUUi3Pih8tI/AAAAAAACXks/a5zCE1lbQkgqYGFNL2ouvzHObDFmMTh-ACKgBGAs/s1600/IMG_20190802_225054.jpg', g: ['landscape'], p: '$450' },
+  { y: 2019, t: 'Falls at Bellevue Botanical Garden', w: 12, h: 16, m: 'Oil on canvas', u: 'https://1.bp.blogspot.com/-OCi1tyRbkeU/XSQ7C2B-chI/AAAAAAACWCw/nvebm9tGVkY-8N8Voh176vza_J3q1p9FQCKgBGAs/s1600/IMG_20190706_220122.jpg', g: ['landscape'], p: '$550' },
+  { y: 2019, t: 'Evans Creek', w: 16, h: 20, m: 'Oil on canvas', u: 'https://1.bp.blogspot.com/-vSX3-ipCIYM/XSQ25RoOQkI/AAAAAAACWBY/Qu9Qe6clSYYxRVOnCU5OJOEp7OiKXLJtgCKgBGAs/s1600/IMG_20190422_084834893.jpg', g: ['landscape'], p: '$700' },
+  { y: 2019, t: 'Last Golds', w: 16, h: 12, m: 'Oil on panel', u: 'https://1.bp.blogspot.com/-PzkhwQK4LAE/XSQ4hI_Mm-I/AAAAAAACWB0/eJYDZSYTwZEwC48eaNTPx_eH-GNSOa5kACKgBGAs/s1600/IMG_20181225_095456271.jpg', g: ['landscape'], p: '$550' },
+
   { y: 2018, t: 'Last Reds', w: 24, h: 18, m: 'Oil on canvas', u: 'https://1.bp.blogspot.com/-nXN8wxHhDHw/W_ze8X9MtDI/AAAAAAACFnU/taaXf8_RI0oK5TcVkGrl4MNe_SBoLhZFACKgBGAs/s1600/IMG_20181112_082543710.jpg', g: ['landscape'], p: '$900' },
   { y: 2018, t: 'Red Shed', w: 12, h: 12, m: 'Oil on canvas', u: 'https://3.bp.blogspot.com/-75jw9oLQreI/W81ba1LKUGI/AAAAAAACDds/VTxEDmVZeiIP84ojg9Ndw4FhAOPGoiFTQCKgBGAs/s1600/IMG_20181021_130553278.jpg', g: ['landscape'], p: '$450' },
   { y: 2018, t: 'Fall Colors II', w: 16, h: 12, m: 'Oil on panel', u: 'https://4.bp.blogspot.com/-3f8QFrzGTKI/W8u-1wR4btI/AAAAAAACDSM/2OX52GBrS7svdgmKk8Qa-X1e7XOmiy4MQCKgBGAs/s1600/IMG_20181020_163806290.jpg', g: ['landscape'], p: '$550' },
