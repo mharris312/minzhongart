@@ -23,7 +23,7 @@ var p = [
   { y: 2021, t: 'Tea Roses in Vase', h: 10, w: 8, m: 'Oil on panel', u: 'https://1.bp.blogspot.com/-iRPx4XKZW1A/YQhxo5JrSGI/AAAAAAAC-jU/JWymk0x0VDwAzZufgE_C5F51-eWhudimQCPcBGAsYHg/s2199/PXL_20210614_061650872.jpg', g: ['stilllife'], p: '$300' },
   { y: 2018, t: 'Sunflower', w: 8, h: 8, m: 'Oil on canvas', u: 'https://2.bp.blogspot.com/-bFq2k2mMMEU/Wx14tqJtJrI/AAAAAAAB8ew/8yyW_E4Igps7BlBWrUF5Qak9RUqIUNjTwCKgBGAs/s1600/IMG_20180610_121205301.jpg', g: ['stilllife'], p: '$250' },
 
-  { y: 2019, t: 'Blue Dress', w: 12, h: 16, m: 'Oil on canvas', u: 'https://1.bp.blogspot.com/-SqPPSJlanuo/YacQKL6RYyI/AAAAAAADFrM/lNoHumqfECURKyi3oSYajDThASSmw53NwCPcBGAsYHg/s3641/PXL_20211021_161434642.jpg', g: ['people'], p: '$450' },
+  { y: 2019, t: 'Blue Dress', w: 12, h: 16, m: 'Oil on canvas', u: 'https://1.bp.blogspot.com/-SqPPSJlanuo/YacQKL6RYyI/AAAAAAADFrM/lNoHumqfECURKyi3oSYajDThASSmw53NwCPcBGAsYHg/s3641/PXL_20211021_161434642.jpg', g: ['people'], p: '$550' },
   { y: 2018, t: 'Jamie', w: 16, h: 20, m: 'Oil on canvas', u: 'https://3.bp.blogspot.com/-0qyj1DfuDxo/WxTSKFns9lI/AAAAAAAB74k/Z2dgCkySErMuSXJO2Lla3OTx7B3lu0bIQCKgBGAs/s1600/IMG_20180530_084642376.jpg', g: ['people'], p: '$800' },
   { y: 2012, t: 'Iris', 'm': 'Oil on panel', w: 14, h: 11, u: 'https://1.bp.blogspot.com/-1QTHLUnOye0/T2GAMlnfACI/AAAAAAAAGhM/x_mgRmdub_s/s320/20120310_Iris.jpg', g: ['people'], p: 'sold' },
 ];
