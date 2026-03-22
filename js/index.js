@@ -1,4 +1,304 @@
 var p = [
+{
+    y: 2026,
+    t: 'Big Island Ocean Sunset',
+    h: 8,
+    w: 10,
+    m: 'Oil on panel',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_PPSn-jG4AzKe7ntjufhTj1EFXh-zlxvPVxVsW7pAMsH9LNO39uL38RXOHFzB6I-Yp5eXpRmT1nlOcuAEb5FEO5Zfvv4iKz53YSGLi6EomvCEtV0eM1Kd2HSq4DzeWNgK8AmwBTwZO71XNgNzpSiS0LnYvx73D7v2CZrYffoq89zZoAlbEA98Gju6R9Pw/s3327/PXL_20260113_053737882.jpg',
+    g: ['landscape'],
+    p: '$500'
+},
+{
+    y: 2026,
+    t: 'Lady Washington at Lake Union',
+    h: 12,
+    w: 9,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5p5Ue1Xa-ahkWkkkiF-Avk0jN72t2Q1p9nJtx3LQGzyTvH4rFHdW_5FG4v459ecD3gfJUhM4M44WXRSQWznM5jAJBu_WDX7zIVBRJOwxC3PX4KbXxJ6cNabLzOP3aC1czu_Z-6c-MQLxbQFtb48_kJkwZkJRln8oBi9kJC9U-fzfGqFa_YBbdV1QrXHeN/s3376/PXL_20260322_065435678.jpg',
+    g: ['landscape', 'marinescape'],
+    p: '$650'
+},
+{
+    y: 2026,
+    t: 'Atop Tiger Mountain Trail III',
+    h: 9,
+    w: 12,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixeTdAslHGvg3HgszpismZJA2ogX2BmW7KK8Jp02SKGhSX3Id5JSfnd1iyU1ibTf-U8Je24QB1oTFJm01Dc7TZhoH-f_w6thKakDI7QgnVEIqTtCnjn38JFE5GsaMOCqYRlN9OSefXICiUTfEL9EguE8ZWmN6VpbyykUmleT5TOT2W0AYyyRcwfjM0I6PA/s3837/PXL_20260222_220925143.jpg',
+    g: ['landscape'],
+    p: '$650'
+},
+{
+    y: 2026,
+    t: 'Sweet Serenity',
+    h: 9,
+    w: 12,
+    m: 'Oil on panel',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-hXIafdFBTZP_TmZ3BzYvBD0aNYxLPfUHcE3O_Mo-Vc-O-LKEie2RCQTN2mbP_qpJS4YCBviEJ2RKYiMahXzKKgpquRHUTYDK_B3lB9QzbYelWfXrIXec6lPSWYNXjjNtYfEH8hilAHrw0F8igkhDEFuNc769tE5AHs2WMQ-WJIySGADVj9B9Go2-wi0l/s3649/PXL_20260301_193838909~2.jpg',
+    g: ['floral'],
+    p: '$650'
+},
+{
+    y: 2026,
+    t: 'Velvet and Violet',
+    h: 8,
+    w: 10,
+    m: 'Oil on panel',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaXbrxinjCsldmGLmRp-EciEXZQDgYI6V-92p8qkYEHunxHqfjw_5_y_qWc3uyF0boC1aTyLhpA_Br1p2NYicjUdgx5bBrK-wgxmC9DZzVEloWI6OQdDC7aHQ2lOp71EQgCrzM-Ei2mb8jX3R5YefslP6j0OfnbLca0TJkn4_JUhQ5V_rzbgr7cGxxOqSN/s3629/PXL_20260126_060032329.jpg',
+    g: ['floral'],
+    p: '$500'
+},
+{
+    y: 2026,
+    t: 'Pink Rose',
+    h: 7,
+    w: 5,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcvf5vhnsD00NV6r_jn-jyv6lxxOiKA5KeZmhyphenhyphenfqj5rZcLae5_o5ZkK26ypgTIcJ5As3h_ouEqXSk4g7_Eq9AKtfwQURPTgAEHqwRt-OY0fZtTyZOC4zHAsEu9tVeOxdeqFn57mYVg5UcAYzFxFK_Iz_rhGsDczUU9HYS15Vhcptzd4Iy_seH-UbYtCrT4/s3686/PXL_20260310_182503000.jpg',
+    g: ['floral'],
+    p: '$250'
+},
+{
+    y: 2026,
+    t: 'Dreamy Roses',
+    h: 8,
+    w: 6,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_bnuJTwJ3c0Vqb95MlwnGfWc0CwILG7wST8ik4TjCzwWfhnEILChCmTf8hmn1y8gC5aQMYxcIbzvH-SweTKNcXG2Y-OI3h3rR3rQ0dSfsSdNz-L2v-38anC4hB5tA094_nJrKt6fxF18rcBmR8q093oVco3GJjZ7JLhxzWgYjSrX_J8v8q4QpRZ1usQJ0/s3721/PXL_20260316_021405749.jpg',
+    g: ['floral'],
+    p: '$300'
+},
+{
+    y: 2025,
+    t: 'Neighborhood Irises',
+    h: 14,
+    w: 11,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhewuEjt9dK0pdMGnabWpwx6aAv7IiuVKsG7t_WV2S1kXsxtQLjnJJZxccC2sAROxId4qw1U2p05vEUXn4mSLENCwTgb7-Jy0dDResd2GdbWpOeBlYnmpjX4U-oemx9dGppXYfqfD9qAbxAPAPoQcYBeJ33vh1JgMq5I5Jd6V_v3SwMuj7ySyyUVRX5u7Sd/s3650/PXL_20250526_184821679~2.jpg',
+    g: ['floral'],
+    p: '$800'
+},
+{
+    y: 2025,
+    t: 'Crimson Whispers',
+    h: 10,
+    w: 8,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgotj8zKwPelrOuP4oTYDH1GNGz7IQ-kRMNEdU-4I6UFGeCz52POhWP3alIXxBnmlM6e-fFAuxmKr_Q_A-9DWaUaoDbtxnuy0AGaZTEGlGOm6JTqbqr6XfkEPdv-EKqCUdPuZkm07TrYhgGSmbiNHJcGWTq38MpawQcyiZHvrCRDmq7071BSKv7mvgoZRVk/s3369/PXL_20250618_042650012~3.jpg',
+    g: ['floral'],
+    p: '$500'
+},
+{
+    y: 2025,
+    t: 'Twilight Bloom',
+    h: 10,
+    w: 8,
+    m: 'Oil on panel',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-3luUb9xtgE7JGocODESd0O1HqTgfSabn6ZrJTrUPxU9xzTUmV3f5Kvr16L-fv34G_Le-ajRK_RVg3WBBlD4nbQ5LDtoZUeadEPhamj3OWbUlaV_VVMUHcntygoBVY4kV_SJmoRxmSrnb0XPh2MTfc2fiTCwM6Ze74d4ceGutjzwA6gmbujpcJyphxJpq/s3546/PXL_20260313_001119525.jpg',
+    g: ['floral'],
+    p: '$500'
+},
+{
+    y: 2025,
+    t: 'Embers in the Mist',
+    h: 10,
+    w: 8,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioJHVxcYnF3OCBI_F7bduCauG4sZ2lYTLRdoCrkhSaTGW3C3SOeOy5SjgjMpEiIPA3XX1-2TWW4OiuFNQLoVlxqwZiupfgQCz948l8pwzfAmhBnRTFG5nNHCSZeapUHuD5xQzx7a7aHXwKF1wsUmYalQMtlYia5BIFyV8FrVlUdYO2qsDGHRqtwY4MuH_X/s3459/PXL_20260313_000011910.jpg',
+    g: ['floral'],
+    p: '$500'
+},
+{
+    y: 2025,
+    t: 'Sunset Gail Light Dahlias',
+    h: 7,
+    w: 5,
+    m: 'Oil on panel',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlBdd8Wgy6GoFS9kmPV7ME7TqErsXogYf6t0325baiv1hkWq2Z0VewZJQTmcS2VVOeFc6JB9EzB4Eio3CL9H7W0g7D_Aox7ZJpa7VkeAVfwL9lCPT11Ai1RnxPD1Vr7FpEeo3gtgfYZO0z22Fm0pkHD0I537VF1CaemczV_E4_bTBNUgZ-9PAEMUjcITsH/s2721/PXL_20250903_020307488-EDIT.jpg',
+    g: ['floral', 'small'],
+    p: '$250'
+},
+{
+    y: 2025,
+    t: 'Farm in Evening Light',
+    h: 5,
+    w: 7,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTJUz0ecdBlkFzMX1nx31qloKHye9iUko4gZu_1rUTifocnlfxEUYPFNuHttsKS6JYiJqVetTsRsEvi0bOIuLbxBLnGzggrGsG7d7Z-u8EVKWPCL5VkvtkaQkfWnhnBUky8SN-ebOIWrOvlKhz8gmJJoFvtEKTVjQs1MNoDkX1eXLmbF5E-HE14PgWwHyH/s2812/PXL_20250919_013139483.jpg',
+    g: ['landscape', 'small'],
+    p: 'sold'
+},
+{
+    y: 2025,
+    t: 'Where the Light Lingers',
+    h: 8,
+    w: 16,
+    m: 'Oil on linen',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqa67DQ6Bi7YkZpZDHucxelHTniaLu27Zaapd9dl_rPIFT8_8Jv5lKg6SLacnu57yw1FiPoCqlNR8FShTzHdt-Yr_aY9bL2F8qpCEjT2TvAO6hSd2PQ4hG9iRM_TNxWjTsBTO2VfLSZF6kkL4aUhkiOkJn6S4D4ExTstHZLxslT9SGXJjdNQwR64FpZAQ9/s3514/PXL_20260315_203505441.jpg',
+    g: ['landscape'],
+    p: '$700'
+},
+{
+    y: 2025,
+    t: 'Mountains at Dusk',
+    h: 6,
+    w: 8,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsa_kc2Ah3vFL_I1D-KXZsnB8F10Ej2D02HZ7Tq6VllKW-dQcTfynPskkVAUWBaJ6YWoNGwTIGAJ1eaMthhqGcY9YVhc3sTFSUKqxugxWpLqZTjfjt4-LTtnbgDgzNsZ5bO2b7JB0-J0ub37BmcQgIkMrC3XuAlx925L7Q6YpthZoZfdm-2PmSbPXz-d5f/s3083/PXL_20250919_161109821.jpg',
+    g: ['landscape'],
+    p: '$300'
+},
+{
+    y: 2025,
+    t: 'OK-Quarter-Circle Historical Barns',
+    h: 9,
+    w: 12,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq8M4P1ex-SPNTw_xn9EtoyYfjQqv2drBiljm8KsFpgwiDmyKbgjkGGA13piHF-UaY4q-LQnDOjkhfYlwVGNkdU7s_UE01j9j1qU-TWMZRphex6Dq05PfbwOk2mI1DDbQYss85X6BPIlD66sy-6Zxkdi9FtKmdYlvIpdPLwF3OXt7L9PKLAlUT-vAWnSpu/s3319/PXL_20250918_204519885.jpg',
+    g: ['landscape'],
+    p: '$650'
+},
+{
+    y: 2025,
+    t: 'Ruby Peak Morning View',
+    h: 8,
+    w: 10,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4fxXsCS4Qm-0CAhM420ykibpf4sHh618p9gxeUm_Jj2Rwh5eTMLhHIcJ31aSEh1r4bM92kGHawtn17OGaIX_a05WH0BtzQlQwUhNQaKtaip2ErHKRkFo_lZPgI-_h9_xTX1eaCKc_81FqAzB_eYzurDlG06w6IYEPwyk3F8NQ51E93eOGjKoSjRssr2jR/s3511/PXL_20250918_212854633.jpg',
+    g: ['landscape'],
+    p: 'sold'
+},
+{
+    y: 2025,
+    t: 'Big Sheep Creek',
+    h: 8,
+    w: 10,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKnaPhnbUjPrHcTwjsxc4ZJUEUAptPIa-dxZwyQWxrTETS3VYHGAEIf3ldi3oCPlOIIk8YII3xUW9I4GrOvNZLPb6pb8r9QKmW93qDU6DwJ4p64Rk65u0_kx4kfVpbC4YPhyGP9tWgmfjHcsj9yioUUNABqPzHyl_p-LgMjIOkJSeP3GzH4f6NbELzYW91/s3501/PXL_20251202_162817030.jpg',
+    g: ['landscape'],
+    p: '$500'
+},
+{
+    y: 2025,
+    t: 'Coupville Wharf',
+    h: 8,
+    w: 10,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia9VWW1Yy5rzkuaQl4nTo2qli6DNE28hGQcu1HXpEmvEIOW-82PwokUPjzL3l0N74pGjBt4bA9X4b_X_TkdoNGuW6F62BqCTl3olgMeeMmIE91_3ctBdxzuxERlPIb6AIhGg1WNXgNvA0xyKUBAHqJLJdFWC_02i5qJlYiZM1LLhnQHousnRgEhbp3Rmbp/s3387/PXL_20250819_230159372.jpg',
+    g: ['landscape'],
+    p: '$500'
+},
+{
+    y: 2025,
+    t: 'Summit Trail Atop Whidbey',
+    h: 8,
+    w: 10,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7F04gzYnM8Uazna6HgCRsc7LU8r3Nj4cw9n6CT2IjungJpLPqPLlM7Phs5LrSQD4sUDggdUI0mede1v89oTvK6c0XjLwXjSm0MhsQkxafg64Czu9RpIRFasiZxyhqKX1SczV0B2wnjh2Y5chClJQiiNjYddG6V27ssgOu2WXt95gxQbmS01x-pefWcSXN/s3507/PXL_20250814_045744473.jpg',
+    g: ['landscape'],
+    p: '$500'
+},
+{
+    y: 2025,
+    t: 'Dusk View from Coupeville Wharf',
+    h: 6,
+    w: 8,
+    m: 'Oil on panel',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3oX-PFerIndKhGPguKSAznFjo9gEVKQT6FUv3Mcs8Mf5htYlPoTPNicAMZBYJmZL-xDbHDy5jcrF_xdu5YLofjds8TxWq3mXP4k-SfVOz6uWkNOTUqWaOIqPmpir_2hvxwQPjrXNDx3_HUSjaGnXl9nvegZXaMKlmkqB480zsm9bdCnEw10Se0hdO-9vE/s3777/PXL_20250814_054619612.jpg',
+    g: ['landscape', 'small'],
+    p: 'sold'
+},
+{
+    y: 2025,
+    t: 'Deception Pass Scenic View Point',
+    h: 10,
+    w: 8,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZIDnIK5XvJ3pd9XzYDZZNO5PgRx6w1xfDnKoV3BJcPTC9IEdkDS_Xd5C6qRyhdJ3i8qFKDD5E-340Bhdgc87XnJmxKSODHtsu1Pm-MNxjbaY0SI0qoaGtKWY6EAMoWoB2MkBvlnjzS3bDCFp4GsaTeRq5eJx6Qap5cGYLDtMO56kl76VL3Zb8sibBC14f/s3160/PXL_20250903_064457993.jpg',
+    g: ['landscape'],
+    p: '$500'
+},
+{
+    y: 2025,
+    t: 'Sailboat at Coupeville Wharf',
+    h: 8,
+    w: 10,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4COGQ1bxjfCgbBD9iPDgB6gsLV_2mzvGvRvg1ondaMvpCICDdjzgl_pDlDdjkvkkUo-ug4wUV5Won-YUjgf3QYj7M2B9onlQ_EmjaC1-d8gE3kam8I8Ihjb1azJUsk6qOhbxnGq3WZqagzW7i92DhF6I5CWts4lfRz1JTrenNZBytZPFKluf8UMumCoNG/s3739/PXL_20260222_071508979~2.jpg',
+    g: ['landscape', 'marinescape'],
+    p: '$500'
+},
+{
+    y: 2025,
+    t: 'Deception Pass at Dusk - Plein Air',
+    h: 8,
+    w: 10,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe1hKuoqI-soOSsKbYzAQ5eyJlbNR3ehv1AZFlLs3Vzg8NYG4OIFceSz9PIj8eTPMiYEo0LMIU-l4f93RPb053LEGkJJ0prXK6vt9VeXODwwNOK7jGkCxRq366aiSW2EYMWAM5_bztD3TyfBUb29TUP0287OMhKZz2Sv7rL86tw0FY7uq11hlDed8ZNf_7/s3117/PXL_20250831_165003728.jpg',
+    g: ['landscape', 'marinescape'],
+    p: 'sold'
+},
+{
+    y: 2025,
+    t: 'Deception Pass at Dusk - Studio',
+    h: 16,
+    w: 20,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqgdwoShHCStBotzuU24OKwuqTQgc4NEKiSotx0aDHLhk7155VU-Os1m4b2t1KvhI-ZtVFifCMlwNTFlZi23U0wrNslS0Et932DOXp68-Ke-2HIpHyjZnFEDDux5U-CDcyuB8fw-GkNsdODUM9OSKpNGPAPo6bJ5Zahu5-zTV3SvcMcGLCCY8xFVgXagty/s3295/PXL_20251121_063032064.jpg',
+    g: ['landscape', 'marinescape'],
+    p: '$1400'
+},
+{
+    y: 2025,
+    t: 'Clouds at Coupeville Wharf',
+    h: 8,
+    w: 16,
+    m: 'Oil on linen',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCkK9BmVx_OVsFoRfhOXZKyixwTzr5OeqOXjXyoOQ_v-sAApt5EE2gByvwVk_tzkb2eBkPzPNrhXbLVzzIG_pJphhEyV-YCZi4fJy5gvS26hAPBPHFYmxyITsnHIRSyZsPkQzzBqIvZQiOmGzk2B-zouV4-IJM4sHApZfbB0Zw_-6TU6pooslakNiuIiwC/s2854/PXL_20250830_000131486.jpg',
+    g: ['landscape', 'marinescape'],
+    p: '$700'
+},
+{
+    y: 2025,
+    t: 'Whidbey Farm',
+    h: 5,
+    w: 7,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlSjCn_ezOCjXjWd3woAGUpVWNoiqI0ppKmj1-b8S00jo50Y28W0emyd8NNSuOKuAz90NM7F-97ZWcMhbll0irf2sm24Izl5HasVVEZSAgKBtrG2tCvfwtkmAFGfmWZRsW6KfX4OoXm-OSElk40g5SRHl48yImTVyhQXnU8qca5FlUqZfUTB_vKmun8fdY/s3380/PXL_20250828_040941955.jpg',
+    g: ['landscape', 'small'],
+    p: '$250'
+},
+{
+    y: 2025,
+    t: 'Costal Embrace',
+    h: 11,
+    w: 14,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJpbW9rYsSUuunxO6rleQ4SPuEx2z9AgUCwB6j_9cmGs0RneDdnwZU0FF5kvssF67aKPxuxVzLg3-jtXZRwxSE7j1ylDbYLew9I1Xp52B9EgqKzrM9iPfXtUVUE8_fMjOBLlLvKlhnNyTmoCibVKX_eWhZnq8QbWyhn4oT5rq14zM97mBgB3buX_3KJXHU/s2405/PXL_20250722_165833509.jpg',
+    g: ['landscape'],
+    p: '$800'
+},
+{
+    y: 2025,
+    t: 'Clashing Waves',
+    h: 8,
+    w: 10,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkQ2LUPqJmnGfxYyRzw_ZvvuVyYST53MV6q3h1a11A0Z_edJHo-7vZMB9GTFMVAG1d_INx4Huf5TPajv70EHyTADsP7D8S0BI9o1b8fc5BJNOtg0bkOsdSm9PwDsFeIQEtmWWUdLeLfOG5YffNy9FApuAeRogbBaf39H-2pqEWA1yYYO9_sXTulzfUwa1G/s3767/PXL_20250406_051222611.jpg',
+    g: ['landscape'],
+    p: '$500'
+},
+{
+    y: 2025,
+    t: 'Tropical Breeze',
+    h: 8,
+    w: 10,
+    m: 'Oil on canvas',
+    u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSOT9SChcJgOv9Sjfu2BKjB1mz5GtcrSdXQI_ebXRwQYvGeT7KKz4w5RNCyamnI33jQeQn6Y8bxh2zhUsQYeDcObI2mfOUd6BMLgA4zCiJG1-uibLdYcit14d-cpPIuf0C9asu5ySgChTWZa9ud97dw-Od1xEkMwev4FXw1B3BoCHSowTLoCkd7hIhdDBU/s3466/PXL_20250326_160219997.jpg',
+    g: ['landscape'],
+    p: '$500'
+},
 { y: 2024, t: 'Mountain Majesty - Studio', h: 18, w: 24, m: 'Oil on canvas', u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK_YDTlaGp3QF3Xl8WIM29EoHobGlibuApaYOmrD5LxrTntiMhATbfDj24G36Zt5tLR2vYw-6CfpQuQthuBkL0wGnr-Ii17EESXSFutJfqmFNTPuiUYZf2wZ84PLitgEbNmU9BWDcbSOqJd2eRqjgUc76JdtEQmlWOT5_xCz7qKUVg2EDbLKYfMjg7gFIo/s3796/PXL_20241121_033046153.jpg', g: ['landscape'], p: '$1900'},
 
 { y: 2024, t: 'Golden Hour Cliffs - Studio', h: 20, w: 16, m: 'Oil on canvas', u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhR4AgAz2GYRkZipU9bkRMSBacRkIOmVkL_eq-pEX9hC_3IzplzBhhkGupwGqNe73Y60Gw3DZEknsSzrPw2ShA6c4mz5dOj_shPdV6vCsMlEt5L7A4gqV6B98CgS7sp-IbjWaIbATOu19GX_kqRmMV8W8MJKj5LNGvIWisu95wIt4uGmkv4rhNeq1o7ENd3/s3163/PXL_20241201_180524169.jpg', g: ['landscape'], p: '$1400'},
@@ -13,7 +313,7 @@ var p = [
 { y: 2024, t: 'Buckhorn Canyon', h: 11, w: 14, m: 'Oil on canvas', u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsKaiVKFw3radJJTTcZl0abXXwexpeCaShgq63enrd54kH-DfThe-OZuWDp56sMnmL5OUgV2s3i30Q-wIpkRB8_S-FvTNuBa5-m8LG5dPDsIC7FcpOPoOnuwNnGVpvwOwe5Z8yarIhNL_pL_C3kW3yw9fhxKXthsg7u9Mj8UyoDF4wTPyskBlhbCey_2dj/s3521/PXL_20240919_044746840.jpg', g: ['landscape'], p: '$800'},
 
 { y: 2024, t: 'Red Rock Falls', h: 11, w: 14, m: 'Oil on canvas', u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz3jE0YmqqImHPdiTGJsNmTT4e_dcB2nJR1VMrBtqB51x0rVmMGReGnpLDLBVXj-BIaM1ovEXcw1QH9ZrpFkG7_Hu2MROOeDgvCT6h7WPa5QlZGBB6SYh5N0joDZ_xZp2rkmz1j6LT86Q-8C6KEWbUd2m2R2NXGgK30hSe8MD0WbFTlD9ZaOMQcmA00o-1/s3769/PXL_20240830_045133745.jpg', g: ['landscape'], p: '$800'},
- { y: 2024, t: 'Afternoon at Penn Cove', h: 11, w: 14, m: 'Oil on panel', u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvD2J_8FfYIXg9RTzYdNzID85eQ0RHYuI50oUTTwTn__JEoSWSq081oxRz4aTloTynt1SRW_tOhsdjmJsea-TVYr3h0yYIcsPO66w5C7XBKwpycWDUM6bKqDt8yoAxWLNVJNUjTGSIsbrPrcxNa4dOboJhwgxlKIWJyvHbz_A99ktbeWXxhbyZVPRI2TjY/s1440/IMG_20240816_063157_106.jpg', g: ['landscape'], p: '$800'},
+ { y: 2024, t: 'Afternoon at Penn Cove', h: 11, w: 14, m: 'Oil on panel', u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvD2J_8FfYIXg9RTzYdNzID85eQ0RHYuI50oUTTwTn__JEoSWSq081oxRz4aTloTynt1SRW_tOhsdjmJsea-TVYr3h0yYIcsPO66w5C7XBKwpycWDUM6bKqDt8yoAxWLNVJNUjTGSIsbrPrcxNa4dOboJhwgxlKIWJyvHbz_A99ktbeWXxhbyZVPRI2TjY/s1440/IMG_20240816_063157_106.jpg', g: ['landscape'], p: 'sold'},
  { y: 2024, t: 'Misty Whidbey Morning', h: 11, w: 14, m: 'Oil on canvas', u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJtcgSvCLGSPEzT4zSRAlqqWsccDQBAA5JQMtx5fARpi-b5HJ3IUkX56CqY5hzD5LPSKgDDBfkEV9ovyksNiZhL5jqoutSYx9fmrF13ftj6st-wFD1-c7aAqkTH60bZMkNNDJ2FLMSOlIwffGSgHTi7E6Qy7fOOY-Ki2KwF96xUHF4fT6QJdB8Ri1zFypY/s3470/PXL_20240910_005334142.jpg', g: ['landscape'], p: '$800' },
  { y: 2024, t: 'Misty Carmel Morning', h: 9, w: 12, m: 'Oil on canvas', u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpINEBQaLHC8zB3Mw5x-B2x9bIfdQKyTK55NUH3kcVLV24vkGGYcY7fNeoVTQgMWrwJYlGTHYV5WsbbcJtvxgGwe46LAJfoWnmH0wE1GSWKkweef1J4OYtmLgUUYfFNCGL0fmJKLfAjCj48Dzs72newuoz42oJKEJu8rXNpH9GumutXABT5BrMrUmC1jek/s3586/PXL_20240527_180425796~2.jpg', g: ['landscape'], p: '$650' },
  { y: 2024, t: 'Mountains by I-90', h: 5, w: 7, m: 'Oil on panel', u: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo0C8eIl3WhyLUGpolck4upz0csBkPuXYhT5bix5_MKZEjMW1uC-GhUFApNJgvtD31hvOjkQrQdhWP0rDptkrNHx7XmP6F7C2LCdHhp0F5L4pUxqtBFLfcYw8B18EydxCLHwu-mOAF9mdZh41Kkbqa12UA6MyQ27W6Yri6hqDVMDfRK-bHBmv8d0war6h9/s2902/original_c9f39315-cb02-4cf8-9a69-66c8c9071653_PXL_20240217_221503002.jpg', g: ['landscape','small'], p: '$250' },
